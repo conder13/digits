@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="style.css">
+
+<head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="index.js"></script>
+
+
+   <title>Digits</title>
+</head>
+
+<body class="startScreen">
+   <div class="center-screen">
+
+      <img src="logo.png" class="logo">
+      <h1 class="title"><b>Digits</b></h1>
+      <p class="description">A daily numbers puzzle</p>
+      <button class="play" onclick="location.href='game.html'">Play</button>
+      <p id="current_date"></p>
+      <script>
+         date = new Date();
+         year = date.getFullYear();
+         month = date.getMonth() + 1;
+         day = date.getDate();
+         document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+      </script>
+   </div>
+</body>
