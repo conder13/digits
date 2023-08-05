@@ -7,19 +7,6 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
       <script src="index.js"></script>
       <title>Digits</title>
-      <script>
-            // Fetch the data from the server and display it on the webpage
-            fetch('/data') // Replace '/api/data' with your server endpoint URL
-                  .then(response => response.json())
-                  .then(data => {
-                        // Process the data and update the webpage
-                        const dataContainer = document.getElementById('dataContainer');
-                        dataContainer.innerHTML = JSON.stringify(data, null, 2); // Display the JSON data in a readable format
-                  })
-                  .catch(error => {
-                        console.error('Error fetching data:', error);
-                  });
-      </script>
 </head>
 
 <body>
@@ -40,7 +27,8 @@
             <button class="unselectedNum numButton" id="button6" onclick="changeClass(this.id);"><b>22</b></button>
             <br>
             <br>
-            <button class="undoButton"><img src="undosign.png" class="undoImage"></button>
+            <button class="undoButton" id="undoButton" onclick="changeClass(this.id);"><img src="undosign.png"
+                        class="undoImage"></button>
             <button class="unselectedSymbol symbolButton" id="plusButton" onclick="changeClass(this.id);"><img
                         src="plussign.png" class="plusImage"></button>
             <button class="unselectedSymbol symbolButton" id="minusButton" onclick="changeClass(this.id);"><img
