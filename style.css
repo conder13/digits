@@ -8,6 +8,7 @@ body {
    border-radius: 50px;
    border-style: dashed;
    border-width: 0.08em;
+   border-color: black;
    color: black;
 }
 
