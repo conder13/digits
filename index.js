@@ -74,6 +74,7 @@ function main() {
    document.getElementById("button6").innerHTML = num6;
 
 }
+
 function changeClass(id) {
    num1 = Number(document.getElementById('button1').innerHTML);
    num2 = Number(document.getElementById('button2').innerHTML);
@@ -163,9 +164,14 @@ function changeClass(id) {
                }
                if (symbol.id == "timesButton") {
                   newNum = Number(document.getElementById(num.id).innerHTML) * Number(document.getElementById(id).innerHTML);
-                  madeMove = true;
-                  number.classList.add("gettingUsed");
-                  $('#' + id).addClass("gettingChanged");
+                  if (newNum < 10000) {
+                     madeMove = true;
+                     number.classList.add("gettingUsed");
+                     $('#' + id).addClass("gettingChanged");
+                  } else {
+                     newNum = Number(document.getElementById(id).innerHTML);
+                  }
+
                }
                if (symbol.id == "divideButton") {
                   if (Number(document.getElementById(num.id).innerHTML) % Number(document.getElementById(id).innerHTML) === 0) {
@@ -306,4 +312,27 @@ function changeClass(id) {
    });
 
    console.log("13: " + num1);
+}
+
+function challenge() {
+   console.log(newdate);
+
+   listNums = [2, 32, 84, 80, 28, 63, 91];
+
+   targetNum = listNums[0];
+   num1 = listNums[1];
+   num2 = listNums[2];
+   num3 = listNums[3];
+   num4 = listNums[4];
+   num5 = listNums[5];
+   num6 = listNums[6];
+
+   document.getElementById("targetNumber").innerHTML = targetNum;
+   document.getElementById("button1").innerHTML = num1;
+   document.getElementById("button2").innerHTML = num2;
+   document.getElementById("button3").innerHTML = num3;
+   document.getElementById("button4").innerHTML = num4;
+   document.getElementById("button5").innerHTML = num5;
+   document.getElementById("button6").innerHTML = num6;
+
 }

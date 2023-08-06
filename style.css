@@ -26,8 +26,8 @@ body {
    width: 85px;
    height: 85px;
    font-size: 35px;
-   margin-left: 2px;
-   margin-right: 2px;
+   margin-left: 2.2px;
+   margin-right: 2.2px;
    font-weight: bold;
 }
 
@@ -59,7 +59,7 @@ body {
 br {
    display: block;
    content: "";
-   margin-top: 10px;
+   margin-top: 15px;
 }
 
 .plusImage {
@@ -116,7 +116,7 @@ br {
 
 .playArea {
    width: 279px;
-   height: 200px;
+   height: 210px;
    position: absolute;
    top: 30%;
    left: 50%;
@@ -132,7 +132,7 @@ br {
 .center-screen {
    /* Set the dimensions of your div */
    width: 300px;
-   height: 325px;
+   height: 400px;
 
    /* Center the div */
    position: absolute;
