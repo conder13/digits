@@ -30,32 +30,32 @@ let currentActivated = {};
 function main() {
    console.log(newdate);
 
-   if (newdate == '2023/8/5') {
-      listNums = [213, 2, 7, 10, 16, 12, 8]
+   if (newdate == '2023/8/14') {
+      listNums = [453, 12, 18, 7, 10, 2, 4]
    }
-   if (newdate == '2023/8/6') {
-      listNums = [197, 11, 4, 7, 3, 20, 17]
+   if (newdate == '2023/8/15') {
+      listNums = [477, 10, 7, 4, 12, 21, 2]
    }
-   if (newdate == '2023/8/7') {
-      listNums = [255, 14, 5, 6, 8, 9, 13]
+   if (newdate == '2023/8/16') {
+      listNums = [225, 10, 17, 8, 13, 11, 1]
    }
-   if (newdate == '2023/8/8') {
-      listNums = [82, 8, 13, 6, 15, 1, 2]
+   if (newdate == '2023/8/17') {
+      listNums = [370, 8, 10, 23, 2, 6, 12]
    }
-   if (newdate == '2023/8/9') {
-      listNums = [454, 7, 22, 12, 11, 17, 6]
+   if (newdate == '2023/8/18') {
+      listNums = [318, 5, 10, 11, 4, 2, 21]
    }
-   if (newdate == '2023/8/10') {
-      listNums = [149, 6, 15, 12, 2, 17, 4]
+   if (newdate == '2023/8/19') {
+      listNums = [292, 13, 2, 16, 19, 10, 8]
    }
-   if (newdate == '2023/8/11') {
-      listNums = [84, 11, 22, 6, 2, 7, 9]
+   if (newdate == '2023/8/20') {
+      listNums = [138, 10, 8, 21, 23, 2, 9]
    }
-   if (newdate == '2023/8/12') {
-      listNums = [337, 14, 7, 1, 9, 21, 8]
+   if (newdate == '2023/8/21') {
+      listNums = [204, 6, 16, 4, 12, 20, 9]
    }
-   if (newdate == '2023/8/13') {
-      listNums = [237, 8, 10, 21, 6, 15, 7]
+   if (newdate == '2023/8/22') {
+      listNums = [431, 10, 4, 21, 5, 17, 3]
    }
    targetNum = listNums[0];
    num1 = listNums[1];
