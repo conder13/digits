@@ -317,7 +317,7 @@ function changeClass(id) {
 function challenge() {
    console.log(newdate);
 
-   listNums = [2, 32, 84, 80, 28, 63, 91];
+   listNums = [94, -2, 9, 12, -5, -13, 4];
 
    targetNum = listNums[0];
    num1 = listNums[1];
