@@ -27,43 +27,82 @@ let currentState = {};
 let activatedStates = [];
 let currentActivated = {};
 
-function main() {
-   console.log(newdate);
+function main(gameNum) {
+   console.log(gameNum);
 
-   if (newdate == '2023/8/14') {
-      listNums = [453, 12, 18, 7, 10, 2, 4]
+   if (newdate == '2023/8/23') {
+      listNums0 = [89, 4, 1, 18, 6, 8, 7];
+      listNums1 = [53, 10, 7, 5, 21, 14, 6];
+      listNums2 = [433, 14, 11, 10, 18, 12, 3];
    }
-   if (newdate == '2023/8/15') {
-      listNums = [477, 10, 7, 4, 12, 21, 2]
+   if (newdate == '2023/8/24') {
+      listNums0 = [143, 10, 17, 16, 4, 8, 9];
+      listNums1 = [124, 13, 18, 12, 3, 1, 20];
+      listNums2 = [122, 2, 15, 5, 3, 16, 1];
    }
-   if (newdate == '2023/8/16') {
-      listNums = [225, 10, 17, 8, 13, 11, 1]
+   if (newdate == '2023/8/25') {
+      listNums0 = [213, 1, 24, 4, 3, 13, 12];
+      listNums1 = [164, 20, 6, 19, 12, 3, 5];
+      listNums2 = [421, 7, 18, 2, 10, 14, 11];
    }
-   if (newdate == '2023/8/17') {
-      listNums = [370, 8, 10, 23, 2, 6, 12]
+   if (newdate == '2023/8/26') {
+      listNums0 = [114, 13, 3, 19, 7, 5, 6];
+      listNums1 = [336, 8, 15, 18, 9, 4, 6];
+      listNums2 = [424, 10, 4, 2, 9, 25, 7];
    }
-   if (newdate == '2023/8/18') {
-      listNums = [318, 5, 10, 11, 4, 2, 21]
+   if (newdate == '2023/8/27') {
+      listNums0 = [490, 10, 9, 8, 12, 5, 23];
+      listNums1 = [415, 2, 1, 14, 9, 18, 6];
+      listNums2 = [137, 19, 17, 5, 9, 12, 10];
    }
-   if (newdate == '2023/8/19') {
-      listNums = [292, 13, 2, 16, 19, 10, 8]
+   if (newdate == '2023/8/28') {
+      listNums0 = [326, 7, 20, 3, 9, 5, 25];
+      listNums1 = [374, 10, 8, 9, 25, 19, 3];
+      listNums2 = [471, 16, 10, 9, 7, 19, 5];
    }
-   if (newdate == '2023/8/20') {
-      listNums = [138, 10, 8, 21, 23, 2, 9]
+   if (newdate == '2023/8/29') {
+      listNums0 = [496, 21, 13, 17, 10, 7, 9];
+      listNums1 = [58, 12, 6, 21, 10, 1, 7];
+      listNums2 = [388, 1, 3, 18, 4, 5, 17];
    }
-   if (newdate == '2023/8/21') {
-      listNums = [204, 6, 16, 4, 12, 20, 9]
+   if (newdate == '2023/8/30') {
+      listNums0 = [337, 21, 23, 12, 1, 8, 7];
+      listNums1 = [498, 19, 12, 5, 9, 6, 20];
+      listNums2 = [301, 22, 10, 9, 8, 11, 17];
    }
-   if (newdate == '2023/8/22') {
-      listNums = [431, 10, 4, 21, 5, 17, 3]
+   if (newdate == '2023/8/31') {
+      listNums0 = [297, 1, 8, 3, 18, 14, 7];
+      listNums1 = [224, 5, 16, 9, 7, 6, 20];
+      listNums2 = [304, 12, 17, 4, 6, 5, 16];
    }
-   targetNum = listNums[0];
-   num1 = listNums[1];
-   num2 = listNums[2];
-   num3 = listNums[3];
-   num4 = listNums[4];
-   num5 = listNums[5];
-   num6 = listNums[6];
+   if (gameNum == 0) {
+      targetNum = listNums0[0];
+      num1 = listNums0[1];
+      num2 = listNums0[2];
+      num3 = listNums0[3];
+      num4 = listNums0[4];
+      num5 = listNums0[5];
+      num6 = listNums0[6];
+   }
+   if (gameNum == 1) {
+      targetNum = listNums1[0];
+      num1 = listNums1[1];
+      num2 = listNums1[2];
+      num3 = listNums1[3];
+      num4 = listNums1[4];
+      num5 = listNums1[5];
+      num6 = listNums1[6];
+   }
+   if (gameNum == 2) {
+      targetNum = listNums2[0];
+      num1 = listNums2[1];
+      num2 = listNums2[2];
+      num3 = listNums2[3];
+      num4 = listNums2[4];
+      num5 = listNums2[5];
+      num6 = listNums2[6];
+   }
+
 
    document.getElementById("targetNumber").innerHTML = targetNum;
    document.getElementById("button1").innerHTML = num1;
@@ -304,8 +343,16 @@ function changeClass(id) {
    allNums.forEach(button => {
       if (button.innerHTML == targetNum) {
          $('#' + id).addClass('match');
+         if (window.location.href == "conder13.github.io/digits/game.html") {
+            setTimeout(() => { window.location.href = "game1.html"; }, 1800);
+         }
+         if (window.location.href == "conder13.github.io/digits/game1.html") {
+            setTimeout(() => { window.location.href = "game2.html"; }, 1800);
+         }
+         if (window.location.href == "conder13.github.io/digits/game2.html") {
+            setTimeout(() => { window.location.href = "end.html"; }, 1800);
+         }
 
-         setTimeout(() => { window.location.href = "end.html"; }, 1800);
 
       }
 
