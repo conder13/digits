@@ -31,7 +31,7 @@ function main(gameNum) {
    console.log(gameNum);
 
    if (newdate == '2023/8/23') {
-      listNums0 = [89, 4, 1, 18, 6, 8, 7];
+      listNums0 = [208, 2, 8, 3, 1, 16, 9];
       listNums1 = [53, 10, 7, 5, 21, 14, 6];
       listNums2 = [433, 14, 11, 10, 18, 12, 3];
    }
@@ -343,13 +343,13 @@ function changeClass(id) {
    allNums.forEach(button => {
       if (button.innerHTML == targetNum) {
          $('#' + id).addClass('match');
-         if (window.location.href == "conder13.github.io/digits/game.html") {
+         if (window.location.href == "https://conder13.github.io/digits/game.html") {
             setTimeout(() => { window.location.href = "game1.html"; }, 1800);
          }
-         if (window.location.href == "conder13.github.io/digits/game1.html") {
+         if (window.location.href == "https://conder13.github.io/digits/game1.html") {
             setTimeout(() => { window.location.href = "game2.html"; }, 1800);
          }
-         if (window.location.href == "conder13.github.io/digits/game2.html") {
+         if (window.location.href == "https://conder13.github.io/digits/game2.html") {
             setTimeout(() => { window.location.href = "end.html"; }, 1800);
          }
 
