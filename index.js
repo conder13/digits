@@ -342,7 +342,7 @@ function changeClass(id) {
 
    allNums.forEach(button => {
       if (button.innerHTML == targetNum) {
-         $('#' + id).addClass('match');
+         //$('#' + id).addClass('match');
          if (window.location.href == "https://conder13.github.io/digits/game.html") {
             setTimeout(() => { window.location.href = "game1.html"; }, 1800);
          }
@@ -364,7 +364,7 @@ function changeClass(id) {
 function challenge() {
    console.log(newdate);
 
-   listNums = [94, -2, 9, 12, -5, -13, 4];
+   listNums = [343, 3, 7, 22, 14, 10, 5];
 
    targetNum = listNums[0];
    num1 = listNums[1];
