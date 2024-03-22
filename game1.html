@@ -4,52 +4,56 @@
 <link rel="stylesheet" href="style.css">
 
 <head>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-   <script src="index.js"></script>
-   <title>Digits</title>
-   <link rel="icon" type="image/png" href="logo.png" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="index.js"></script>
+      <title>Digits</title>
+      <link rel="icon" type="image/png" href="logo.png" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F4DKLBGXQV"></script>
 <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag() { dataLayer.push(arguments); }
-   gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
 
-   gtag('config', 'G-F4DKLBGXQV');
+      gtag('config', 'G-F4DKLBGXQV');
 </script>
 
 <body>
 
-   <ul>
-      <li><img class="topLogo" src="conderlogo.png"></li>
-      <li><a href="index.html">Digits</a></li>
-   </ul>
+      <ul>
+            <li><img class="topLogo" src="conderlogo.png"></li>
+            <li><a href="index.html">Digits</a></li>
+      </ul>
 
-   <div class="playArea">
-      <h1 id="targetNumber">0</h1>
-      <button class="unselectedNum numButton" id="button1" onclick="changeClass(this.id);">0</button>
-      <button class="unselectedNum numButton" id="button2" onclick="changeClass(this.id);"><b>2</b></button>
-      <button class="unselectedNum numButton" id="button3" onclick="changeClass(this.id);"><b>6</b></button>
-      <br>
-      <button class="unselectedNum numButton" id="button4" onclick="changeClass(this.id);"><b>9</b></button>
-      <button class="unselectedNum numButton" id="button5" onclick="changeClass(this.id);"><b>1</b></button>
-      <button class="unselectedNum numButton" id="button6" onclick="changeClass(this.id);"><b>22</b></button>
-      <br>
-      <br>
-      <button class="undoButton" id="undoButton" onclick="changeClass(this.id);"><img src="undosign.png"
-            class="undoImage"></button>
-      <button class="unselectedSymbol symbolButton" id="plusButton" onclick="changeClass(this.id);"><img
-            src="plussign.png" class="plusImage"></button>
-      <button class="unselectedSymbol symbolButton" id="minusButton" onclick="changeClass(this.id);"><img
-            src="minussign.png" class="minusImage"></button>
-      <button class="unselectedSymbol symbolButton" id="timesButton" onclick="changeClass(this.id);"><img
-            src="timessign.png" class="timesImage"></button>
-      <button class="unselectedSymbol symbolButton" id="divideButton" onclick="changeClass(this.id);"><img
-            src="dividesign.png" class="divideImage"></button>
-   </div>
+      <button class="tablink" onclick="window.location = 'game.html'">Game 1</button>
+      <button class="tablink highlighted" onclick="window.location = 'game1.html'">Game 2</button>
+      <button class="tablink" onclick="window.location = 'game2.html'">Game 3</button>
 
-   <script>main(1);</script>
+      <div class="playArea">
+            <h1 id="targetNumber">0</h1>
+            <button class="unselectedNum numButton" id="button1" onclick="changeClass(this.id);">0</button>
+            <button class="unselectedNum numButton" id="button2" onclick="changeClass(this.id);"><b>2</b></button>
+            <button class="unselectedNum numButton" id="button3" onclick="changeClass(this.id);"><b>6</b></button>
+            <br>
+            <button class="unselectedNum numButton" id="button4" onclick="changeClass(this.id);"><b>9</b></button>
+            <button class="unselectedNum numButton" id="button5" onclick="changeClass(this.id);"><b>1</b></button>
+            <button class="unselectedNum numButton" id="button6" onclick="changeClass(this.id);"><b>22</b></button>
+            <br>
+            <br>
+            <button class="undoButton" id="undoButton" onclick="changeClass(this.id);"><img src="undosign.png"
+                        class="undoImage"></button>
+            <button class="unselectedSymbol symbolButton" id="plusButton" onclick="changeClass(this.id);"><img
+                        src="plussign.png" class="plusImage"></button>
+            <button class="unselectedSymbol symbolButton" id="minusButton" onclick="changeClass(this.id);"><img
+                        src="minussign.png" class="minusImage"></button>
+            <button class="unselectedSymbol symbolButton" id="timesButton" onclick="changeClass(this.id);"><img
+                        src="timessign.png" class="timesImage"></button>
+            <button class="unselectedSymbol symbolButton" id="divideButton" onclick="changeClass(this.id);"><img
+                        src="dividesign.png" class="divideImage"></button>
+      </div>
+
+      <script>main(1);</script>
 
 
 </body>
