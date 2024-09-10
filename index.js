@@ -21,7 +21,10 @@ var year = dateObj.getUTCFullYear();
 
 newdate = year + "/" + month + "/" + day;
 
-let listNums = [];
+let listNums0 = [];
+let listNums1 = [];
+let listNums2 = [];
+
 let states = [];
 let currentState = {};
 let activatedStates = [];
